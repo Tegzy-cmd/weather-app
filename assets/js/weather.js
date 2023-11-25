@@ -27,6 +27,7 @@ export class Weather{
         this.temperature = Math.round(data.main.temp)
         this.humidity = data.main.humidity
         this.wind = data.wind.speed
+        console.log(this.wind)
         this.city = data.name
         this.icon = data.weather[0].main
         console.log(data)
