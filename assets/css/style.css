@@ -9,7 +9,7 @@
 }
 
 .card{
-    height: 100vh;
+    height: fit-content;
     width: 100vw;
     /* max-width: 470px; */
     background: linear-gradient(135deg, #00feba,#5b548a);
@@ -93,4 +93,22 @@ label{
 .humidity, .wind{
     font-size: 20px;
     /* margin-top: -6px; */
+}
+.facts{
+    margin:50px auto;
+
+    >h1{
+        font-size: 40px;
+        font-weight: 500;
+    }
+    >h2{
+        font-size: 25px;
+        font-weight: 400;
+        margin-bottom: 10px;
+    }
+}
+.fact{
+    text-align: left;
+    font-size: 20px;
+    font-weight: 300;
 }
