@@ -14,7 +14,9 @@ let capital = document.getElementById("capt")
 let region = document.getElementById("reg")
 let currency = document.getElementById("cur")
 let populDen = document.getElementById("populD")
-searchBtn.addEventListener("click", () => {
+let form = document.getElementById('we')
+form.addEventListener("submit", (e) => {
+    e.preventDefault
   let userName = Username.value;
   let country = Country.value;
   checkWeather(userName, country);
