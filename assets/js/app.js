@@ -58,5 +58,5 @@ async function checkFact(country) {
    capital.innerHTML = fact.capitalCity
    region.innerHTML = fact.region
    currency.innerHTML = fact.currency
-   populDen.innerHTML = fact.popD +'/km2'
+   populDen.innerHTML = fact.popD +' /km2'
 }
