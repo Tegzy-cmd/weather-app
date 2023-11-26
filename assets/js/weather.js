@@ -3,7 +3,7 @@ export class Weather{
     countryName
     humidity
     temperature
-    description
+    iso
     city
     wind
     icon
@@ -18,19 +18,15 @@ export class Weather{
     }
 
    async getWeather(){
-    let fact = new Fact(this.countryName)
-    fact.getFact()
     try {
         const response = await fetch(this.#api)
         const data = await response.json()
-        const fact = new Fact(data.sys.country)
+        this.iso = data.sys.country
         this.temperature = Math.round(data.main.temp)
         this.humidity = data.main.humidity
         this.wind = data.wind.speed
-        console.log(this.wind)
         this.city = data.name
         this.icon = data.weather[0].main
-        console.log(data)
         
     } catch (error) {
         console.error(`${error.message}`)

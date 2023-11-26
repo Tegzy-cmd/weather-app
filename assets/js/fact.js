@@ -2,6 +2,7 @@ export class Fact{
     countryName
     capitalCity
     currency
+    popD
     region
     name
     #apiKey = 'W99ERfECh4d1ZsrHgXbAvw==QS4LjYqNnvvqeJmS'
@@ -22,6 +23,7 @@ export class Fact{
             this.capitalCity = data[0].capital
             this.currency = data[0].currency.name
             this.region = data[0].region
+            this.popD = data[0].pop_density
             console.log(data[0])
             
             
