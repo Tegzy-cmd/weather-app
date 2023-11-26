@@ -219,7 +219,7 @@ label{
 }
 .col img{
     width: 40px;
-    align-self: center;
+    /* align-self: center; */
     margin-right: 10px;
 }
 .humidity, .wind{
@@ -230,18 +230,18 @@ label{
     margin:50px auto;
 
     >h1{
-        font-size: 40px;
+        font-size: 25px;
         font-weight: 500;
     }
     >h2{
-        font-size: 25px;
+        font-size: 18px;
         font-weight: 400;
         margin-bottom: 10px;
     }
 }
 .fact{
     text-align: left;
-    font-size: 20px;
+    font-size: 13px;
     font-weight: 300;
 }
 }
