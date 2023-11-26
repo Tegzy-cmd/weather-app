@@ -14,7 +14,7 @@ export class Weather{
     constructor(country){
         this.countryName = country
         
-        this.#api = `http://api.openweathermap.org/data/2.5/weather?units=metric&q=`+`${this.countryName}`+`&limit=5`+`&appid=${this.#apiKey}`
+        this.#api = `https://api.openweathermap.org/data/2.5/weather?units=metric&q=`+`${this.countryName}`+`&limit=5`+`&appid=${this.#apiKey}`
     }
 
    async getWeather(){
