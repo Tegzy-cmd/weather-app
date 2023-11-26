@@ -14,12 +14,15 @@ let capital = document.getElementById("capt")
 let region = document.getElementById("reg")
 let currency = document.getElementById("cur")
 let populDen = document.getElementById("populD")
-let form = document.getElementById('we')
+let form = document.querySelector("form")
+
+
 form.addEventListener("submit", (e) => {
-    e.preventDefault
+  e.preventDefault()
   let userName = Username.value;
   let country = Country.value;
   checkWeather(userName, country);
+  form.reset()
 });
 
 async function checkWeather(username, country) {

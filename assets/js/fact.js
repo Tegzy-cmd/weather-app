@@ -24,7 +24,6 @@ export class Fact{
             this.currency = data[0].currency.name
             this.region = data[0].region
             this.popD = data[0].pop_density
-            console.log(data[0])
             
             
         } catch (error) {

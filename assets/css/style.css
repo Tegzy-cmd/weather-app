@@ -35,7 +35,7 @@ label{
     align-items: center;
     width: 100%;
 }
-.search input{
+.search input[type=text]{
     border: 0;
     outline: 0;
     background: #ebfffc;
@@ -141,9 +141,17 @@ label{
     margin-bottom: 25px;
 
 }
+#we{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 15px;
+}
 label{
-    font-size: 20px;
+    font-size: 15px;
     font-weight: 500;
+    
 }
 .search{
     display: flex;
@@ -152,13 +160,13 @@ label{
     align-items: center;
     width: 100%;
 }
-.search input{
+.search input[type=text]{
     border: 0;
     outline: 0;
     background: #ebfffc;
     color: #555;
     width: 90%;
-    padding: 7px 0;
+    padding: 4px 0;
     text-indent: 20px;
     outline: none;
     border: thin solid #0bad82;
@@ -166,22 +174,23 @@ label{
     border-radius: 30px;
     flex: 1;
     /* margin-right: 16px; */
-    font-size: 18px;
+    font-size: 15px;
 
 }
-.search button{
-    border: 2px solid #0bad82;
+.search-btn{
+    border: thin solid #0bad82;
     outline: 0;
+    font-weight: 500;
+    font-size: 15px;
     background: #ebfffc;
-    border-radius: 50%;
+    border-radius: 10px;
     margin-top: 7px;
-    width: 50px;
-    height: 46px;
+    padding: 10px;
     cursor: pointer;
 }
-.search button img{
+/* .search button img{
     width: 16px;
-}
+} */
 .weather-icon{
     width: 170px;
     margin-top: 30px;
